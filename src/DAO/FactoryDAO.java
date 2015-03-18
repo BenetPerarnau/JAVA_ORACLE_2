@@ -2,7 +2,7 @@ package DAO;
 
 public class FactoryDAO {
 	
-	public static OperacionesDAO getClassDAO(int i){
+	public static OperacionesDAO getInstance(int i){
 		switch(i){
 		case 0:
 			return new ClienteDAO();
